@@ -32,7 +32,7 @@ pipeline {
 }
 	changed {
 		echo 'this will run only when pipeline has changed'
-		echo 'For example, if the Pipeline was previously failing but now is succeded
+		echo 'For example, if the Pipeline was previously failing but now is succeded'
 }
 }
 }
