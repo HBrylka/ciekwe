@@ -5,7 +5,7 @@ pipeline {
 
         stage('build') {
             steps {
-                sh 'echo "Fail!"; exit 1'
+                sh 'echo "Success!"; exit 0'
             }
         }
 	stage("test"){
