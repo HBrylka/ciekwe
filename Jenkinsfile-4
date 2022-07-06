@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage('Test') {
+            steps {
+                sh './gradlew check'
+            }
+        }
+    }
+    post {
+        always {
+            junit 'build/reports/**/*.xml'
+        }
+    }
+}
+
+#junit tworzy plik xml, ktory agreguje i nagrywa rezultaty testow, poki runner moze pokazywac rezultaty plikow
