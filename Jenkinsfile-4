@@ -14,4 +14,4 @@ pipeline {
     }
 }
 
-#junit tworzy plik xml, ktory agreguje i nagrywa rezultaty testow, poki runner moze pokazywac rezultaty plikow
+
