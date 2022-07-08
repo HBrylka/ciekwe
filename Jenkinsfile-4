@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+    	gradle '7.5-rc-4'
+    }
     stages {
 	stage ('Build'){
 	    steps {
@@ -8,7 +11,7 @@ pipeline {
 	}
         stage('Test') {
             steps {
-                sh 'gradle-site-plugin/gradlew check'
+                sh './gradlew check'
             }
         }
     }
