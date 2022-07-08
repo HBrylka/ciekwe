@@ -4,14 +4,9 @@ pipeline {
     	gradle '7.5-rc-4'
     }
     stages {
-	stage ('Build'){
-	    steps {
-	       sh './gradlew'	   
-	    }	
-	}
         stage('Test') {
             steps {
-                sh './gradlew check'
+                sh 'gradlew check'
             }
         }
     }
